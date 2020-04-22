@@ -1457,7 +1457,7 @@ static UISlider * _volumeSlider;
                 self.controlView.maxPlayableRatio = player.duration / self.originalDuration;
             }
         }
-        if (EvtID == PLAY_EVT_VOD_PLAY_PREPARED) {
+        if (EvtID == PLAY_EVT_VOD_PLAY_PREPARED || EvtID == EVT_VIDEO_PLAY_BEGIN) {
             // 防止暂停导致加载进度不消失
             if (self.isPauseByUser)
                 [self.spinner stopAnimating];
