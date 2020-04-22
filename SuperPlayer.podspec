@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
     spec.summary = '超级播放器'
     spec.source = { :git => 'https://github.com/tencentyun/SuperPlayer_iOS.git', :tag => 'v3.2.4' }
 
-    spec.ios.deployment_target = '9.0'
+    spec.ios.deployment_target = '8.0'
     spec.requires_arc = true
 
     spec.dependency 'AFNetworking', '~> 4.0'
