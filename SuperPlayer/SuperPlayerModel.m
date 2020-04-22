@@ -24,7 +24,7 @@ const NSString *kPlayCGIHostname = @"playvideo.qcloud.com";
 }
 
 - (void)dealloc {
-    [_sessionManager invalidateSessionCancelingTasks:YES resetSession:YES];
+    //[_sessionManager invalidateSessionCancelingTasks:YES resetSession:YES];
 }
 
 - (NSString *)playingDefinitionUrl
@@ -91,7 +91,7 @@ const NSString *kPlayCGIHostname = @"playvideo.qcloud.com";
     __weak SuperPlayerModel *weakSelf = self;
     return [manager GET:url
              parameters:params
-                headers:nil
+//                 headers:nil
                progress:nil
                 success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         __strong SuperPlayerModel *self = weakSelf;
